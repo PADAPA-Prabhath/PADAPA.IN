@@ -11,6 +11,7 @@ body {
     font-size: 100%;
     font-family: 'Dosis', sans-serif;
     background: #fff;
+	overflow-x: hidden;
 }
 
 body a {
@@ -45,6 +46,7 @@ h2,
 h3,
 h4,
 h5,
+h5,
 h6 {
     margin: 0;
     font-family: 'Dosis', sans-serif;
@@ -52,16 +54,27 @@ h6 {
     font-weight: 500;
 }
 
-p {
-    font-size: 0.9em;
+.custom-li, p {
+    font-size: 1em;
     color: #8c9398;
     line-height: 2em;
     letter-spacing: 1px;
+	text-align: justify;
 }
 
 ul {
     margin: 0;
     padding: 0;
+	
+}
+
+a{
+	color:#2d2d2d;
+	font-size: 1em;
+}
+a:hover {
+    color: #7C2C28;
+    text-decoration: none;
 }
 
 /*--/header --*/
@@ -366,7 +379,7 @@ h3.main mark {
 }
 
 .about-in:hover .card p {
-    color: #888;
+    color: #2d2d2d;
 }
 
 .about-in .card h5.card-title {
@@ -380,10 +393,10 @@ h3.main mark {
 
 h4.sub-tittle-w3layouts {
     margin: 1.2em 0 0 0;
-    font-size: 15px;
-    color: #019877;
+    font-size: 16px;
+    color: #7C2C28;
     text-transform: uppercase;
-    font-weight: 500;
+    font-weight: 700;
 }
 
 ul.author li {
@@ -401,7 +414,7 @@ ul.author li img {
 }
 
 ul.author li {
-    color: #888;
+    color: #2d2d2d;
     font-size: 0.8em;
     letter-spacing: 1px;
 }
@@ -421,7 +434,7 @@ ul.author li span {
 
 /*-- /services--*/
 
-#feature {
+#promises {
     background: #F7C200;
 }
 
@@ -448,7 +461,7 @@ h3.tittle-w3layouts {
 }
 
 .about-in.middle-grid-info .card p {
-    color: #888;
+    color: #2d2d2d;
 }
 
 .about-in.middle-grid-info .card-body {
@@ -591,7 +604,7 @@ p.sub-meta {
 }
 
 .text-info-sec p {
-    color: #8c9398;
+    color: #2d2d2d;
 }
 
 .text-info-sec h5 {
@@ -668,7 +681,7 @@ a.hover-2:after {
 }
 
 .about-in.blog-grid-info p {
-    color: #888;
+    color: #2d2d2d;
 }
 
 .blog-des {
@@ -717,7 +730,7 @@ span.entry-date {
 
 #accordion .card {
     background: #85daf9;
-    color: #888;
+    color: #2d2d2d;
     margin-bottom: 0.3em;
 }
 
@@ -730,7 +743,7 @@ span.entry-date {
 
 #accordion .card-body {
     background: #fff;
-    color: #888;
+    color: #2d2d2d;
 }
 
 /*----*/
@@ -751,11 +764,12 @@ h4.progress-tittle-w3layouts {
 /*-- stats --*/
 
 .stats_info p {
-    font-size: 2.5em;
+    font-size: 3.5em!important;
     letter-spacing: 1px;
     line-height: 2;
     color: #ec1c24;
     font-weight: 800;
+	text-align: inherit;
 }
 
 .stats_info h4 {
@@ -918,7 +932,7 @@ h4.progress-tittle-w3layouts {
 /*--contact--*/
 
 #contact {
-    background: #019877;
+    background: #7C2C28;
 }
 
 .register-bottom p span {
@@ -963,7 +977,7 @@ p.c-txt {
 
 form.register-contact label {
     line-height: 2.5;
-    color: #39393a;
+    color: wheat;
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -971,14 +985,14 @@ form.register-contact label {
 }
 
 form.register-contact label span {
-    color: #014637;
+    color: wheat;
     line-height: 0em;
     vertical-align: text-top;
 }
 
 .btn-object {
-    background: #1a1a1b;
-    color: #fff;
+    background: #F7C200;
+    color: #000;
     padding: 15px 10px;
     text-transform: uppercase;
     font-weight: 500;
@@ -991,7 +1005,8 @@ form.register-contact label span {
 }
 
 .btn-object:hover {
-    background: #e23f42;
+    background: #907203;
+	color: #fff;
 }
 
 form.register-contact .form-control {
@@ -1019,16 +1034,25 @@ form.register-contact .form-control {
 /*--bottom-last--*/
 
 .bottom-last {
-    background: url(../images/banner3.jpg) no-repeat 0px 0px;
+    background: url(../images/train-the-trainer.jpg) no-repeat 0px 0px;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     -ms-background-size: cover;
     min-height: 560px;
+	background-attachment: fixed;
 }
 footer.newsletter_right{
-    background: url(../images/banner4.jpg) no-repeat 0px 0px;
+    background: url(../images/footer.jpg) no-repeat 0px 0px;
+	background-attachment: fixed;
+	background-size: cover;
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -ms-background-size: cover;
+	
+	
 }
 section.bottom-last h3 {
     font-size: 2em;
@@ -1148,6 +1172,16 @@ section.bottom-last h3 {
 
 .modal-header {
     border: none;
+}
+
+.modal-body li{
+	line-height: 20px;
+	font-size: 16px;
+	letter-spacing: 1.5px;
+	word-spacing: 8px;
+	padding: 10px 15px;
+	font-weight: 400;
+	text-align: justify;
 }
 
 .login h5 {
