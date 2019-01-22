@@ -903,6 +903,8 @@ div.ppt {
 .image-block {
     display: block;
     position: relative;
+	height: 200px;
+	width: auto;
 }
 
 .portfolio-area li {
@@ -922,9 +924,9 @@ div.ppt {
 }
 
 .portfolio-categ li.active {
-    background: #019877;
+    background: #F7C200;
     color: #fff;
-    border: 1px solid #019877;
+    border:none;
 }
 
 .portfolio-categ li.active a {
