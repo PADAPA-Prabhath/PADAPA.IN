@@ -458,7 +458,7 @@
                     <div class="col-lg-6 mt-lg-0 mt-5" data-aos="fade-left">
                         <!-- register form grid -->
                         <div class="register-top1">
-                            <form action="https://formspree.io/info@padapa.in" method="POST" class="register-contact">
+                            <form action="https://formspree.io/admin@padapa.in" method="POST" class="register-contact">
                                 <div class="form-group">
                                     <div class="row">
                                         <div class="col-md-2 d-md-flex align-items-end justify-content-end px-md-0">
@@ -553,11 +553,7 @@
                         <p data-aos="fade-up" style="color: #F7C200;">Join our world of Arts and enjoy the richness of a blissful life. Connect with us through social media</p>
                         <div class="social-icon footer mt-3">
                             <ul class="links-nav d-flex justify-content-end">
-                                <!--
-                                <li>
-                                    <a class="active scroll" href="index.html">Home</a>
-                                </li>
--->
+                               
                                 <li>
                                     <a href="#about" class="scroll" id="fl">About</a>
                                 </li>
@@ -775,9 +771,7 @@
     </script>
     <!-- stats -->
     <script src="js/jquery.waypoints.min.js"></script>
-    <script>
-        $('.counter').countUp();
-    </script>
+    
     <!-- //stats -->
     <script src='js/aos.js'></script>
     <script>
@@ -795,10 +789,7 @@
                 loop: true,
                 margin: 10,
                 responsiveClass: true,
-				autoplay:true,
-    			autoplayTimeout:1000,
-				autoplayHoverPause:true,
-                responsive: {
+				responsive: {
                     0: {
                         items: 1,
                         nav: true
@@ -837,24 +828,8 @@
         });
     </script>
     <!-- //dropdown nav -->
-    <!-- password-script -->
-    <script>
-        window.onload = function() {
-            document.getElementById("password1").onchange = validatePassword;
-            document.getElementById("password2").onchange = validatePassword;
-        }
-        function validatePassword() {
-            var pass2 = document.getElementById("password2").value;
-            var pass1 = document.getElementById("password1").value;
-            if (pass1 != pass2)
-                document.getElementById("password2").setCustomValidity("Passwords Don't Match");
-            else
-                document.getElementById("password2").setCustomValidity('');
-            //empty string means no validation error
-        }
-    </script>
-    <!-- //password-script -->
-    <!--/ start-smoth-scrolling -->
+    
+    <!--smoth-scrolling-->
     <script src="js/move-top.js"></script>
     <script src="js/easing.js"></script>
     <script>
@@ -869,29 +844,22 @@
     </script>
     <script>
         $(document).ready(function() {
-            /*
-            						var defaults = {
-            							  containerID: 'toTop', // fading element id
-            							containerHoverID: 'toTopHover', // fading element hover id
-            							scrollSpeed: 1200,
-            							easingType: 'linear' 
-            						 };
-            						*/
+            
             $().UItoTop({
                 easingType: 'easeOutQuart'
             });
         });
     </script>
-    <!--// end-smoth-scrolling -->
-    <!-- jQuery-Photo-filter-lightbox-Gallery-plugin -->
-    <!--// end-smoth-scrolling -->
+    
+    <!--jQuery-Photo-filter-lightbox-Gallery-plugin -->
+    
     <script src="js/jquery-1.7.2.js" defer></script>
     <script src="js/jquery.quicksand.js"></script>
     <script src="js/pretty-script.js"></script>
     <script src="js/jquery.prettyPhoto.js"></script>
-    <!-- //jQuery-Photo-filter-lightbox-Gallery-plugin -->
-    <!-- /js -->
+   
+    <!--framework-js-->
     <script src="js/bootstrap.js"></script>
-    <!-- //js -->
+   
 </body>
 </html>
